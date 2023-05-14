@@ -4,19 +4,24 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
 
 public class BaseClass {
 	
-	WebDriver driver;
+	static WebDriver driver;
 	
 	public static WebDriver Openbrowser()
 	{
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 		return driver;
 	}
-	
+	@BeforeTest
+	public static void closeBrowser()
+	{
+		driver.close();
+	}
 
 }

@@ -1,5 +1,6 @@
 package pomClasses;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -22,7 +23,7 @@ public class Computers {
 	@FindBy(xpath="//img[@alt='Picture for category Notebooks']")
 	WebElement notebook;
 	
-	@FindBy(xpath="//a[@href='/apple-macbook-pro-13-inch' and normalize-space()='Apple MacBook Pro 13-inch']")
+	@FindBy(xpath="//h2[@class=\"product-title\"]//a")
 	WebElement mac_book;
 	
 	@FindBy(xpath="//input[@id='product_enteredQuantity_4']")
@@ -42,7 +43,16 @@ public class Computers {
 	public void MacBook() 
 	{
 		Actions act = new Actions(driver);
-		act.moveToElement(mac_book).click().build().perform();
+		
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		 // List<WebElement> optionList = driver.findElements(By.xpath("xPath to list of elements"));
+		 // int lastElement = (optionList.size() - 1);
+		javascriptExecutor.executeScript("window.scrollBy(0,300)");
+		
+		mac_book.click();
+			/*
+			 * act.moveToElement(mac_book).perform(); act.click().perform();
+			 */
 	  //mac_book.click();
 	}
 	public void Quantity() 

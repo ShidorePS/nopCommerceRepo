@@ -1,57 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-11T17:53:45 IST" name="Default suite" finished-at="2023-05-11T17:53:58 IST" duration-ms="12880">
+  <suite started-at="2023-05-13T23:27:01 IST" name="Default suite" finished-at="2023-05-13T23:28:07 IST" duration-ms="66070">
     <groups>
     </groups>
-    <test started-at="2023-05-11T17:53:45 IST" name="Default test" finished-at="2023-05-11T17:53:58 IST" duration-ms="12880">
+    <test started-at="2023-05-13T23:27:01 IST" name="Default test" finished-at="2023-05-13T23:28:07 IST" duration-ms="66070">
       <class name="testclass.AllTestClasses">
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:45 IST" name="beforeclass" finished-at="2023-05-11T17:53:49 IST" duration-ms="4354" status="PASS">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:01 IST" name="beforeclass" finished-at="2023-05-13T23:27:28 IST" duration-ms="26386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:49 IST" name="beforemethod" finished-at="2023-05-11T17:53:49 IST" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:28 IST" name="beforemethod" finished-at="2023-05-13T23:27:28 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="test1()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:49 IST" name="test1" finished-at="2023-05-11T17:53:52 IST" duration-ms="2986" status="PASS">
+        <test-method signature="test1()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:28 IST" name="test1" finished-at="2023-05-13T23:27:32 IST" duration-ms="4665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:52 IST" name="beforemethod" finished-at="2023-05-11T17:53:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:32 IST" name="beforemethod" finished-at="2023-05-13T23:27:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="test2()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:52 IST" name="test2" finished-at="2023-05-11T17:53:54 IST" duration-ms="1660" status="PASS">
+        <test-method signature="test2()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:32 IST" name="test2" finished-at="2023-05-13T23:27:34 IST" depends-on-methods="testclass.AllTestClasses.test1" duration-ms="1973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:54 IST" name="beforemethod" finished-at="2023-05-11T17:53:54 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:34 IST" name="beforemethod" finished-at="2023-05-13T23:27:34 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="test3()[pri:0, instance:testclass.AllTestClasses@1b7cc17c]" started-at="2023-05-11T17:53:54 IST" name="test3" finished-at="2023-05-11T17:53:58 IST" duration-ms="3797" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="test3()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:34 IST" name="test3" finished-at="2023-05-13T23:27:45 IST" depends-on-methods="testclass.AllTestClasses.test2" duration-ms="10672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:45 IST" name="test4" finished-at="2023-05-13T23:28:07 IST" depends-on-methods="testclass.AllTestClasses.test3" duration-ms="22244" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable: https://demo.nopcommerce.com/apple-macbook-pro-13-inch has no size and location
-  (Session info: chrome=112.0.5615.138)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Continue shopping']"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [69625c5feb3a841308746bc7c8a60c70, actions {actions=[org.openqa.selenium.interactions.Sequence@7c551ad4]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\poona\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52296/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 69625c5feb3a841308746bc7c8a60c70]]>
+Command: [c8324acfa60b402836a4acf4156c9af8, findElement {using=xpath, value=//button[text()='Continue shopping']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\poona\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59095/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8324acfa60b402836a4acf4156c9af8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: https://demo.nopcommerce.com/apple-macbook-pro-13-inch has no size and location
-  (Session info: chrome=112.0.5615.138)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Continue shopping']"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [69625c5feb3a841308746bc7c8a60c70, actions {actions=[org.openqa.selenium.interactions.Sequence@7c551ad4]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\poona\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52296/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 69625c5feb3a841308746bc7c8a60c70
+Command: [c8324acfa60b402836a4acf4156c9af8, findElement {using=xpath, value=//button[text()='Continue shopping']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\poona\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59095/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8324acfa60b402836a4acf4156c9af8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -64,10 +70,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at pomClasses.Computers.MacBook(Computers.java:45)
-at testclass.AllTestClasses.test3(AllTestClasses.java:67)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at pomClasses.ShoppingCart.ContinueShopping(ShoppingCart.java:34)
+at testclass.AllTestClasses.test4(AllTestClasses.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,10 +109,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
+        </test-method> <!-- test4 -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:testclass.AllTestClasses@77fbd92c]" started-at="2023-05-13T23:27:45 IST" name="beforemethod" finished-at="2023-05-13T23:27:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
       </class> <!-- testclass.AllTestClasses -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

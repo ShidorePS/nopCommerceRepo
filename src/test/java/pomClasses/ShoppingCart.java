@@ -19,7 +19,7 @@ public class ShoppingCart {
 	@FindBy(xpath="//span[text()='Shopping cart']")
 	WebElement shopping_cart;
 	
-	@FindBy(xpath="//button[@name='continueshopping']")
+	@FindBy(xpath="//button[text()='Continue shopping']")
 	WebElement continue_shopping;
 	
 	public void ShoppingCrt() throws InterruptedException

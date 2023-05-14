@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\poona\AppData\Local\Temp\testng-eclipse--1816639106\testng-customsuite.xml</span>
+                    <span>C:\Users\poona\AppData\Local\Temp\testng-eclipse--948271948\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testclass.AllTestClasses" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testclass.AllTestClasses" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -123,6 +123,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testclass.AllTestClasses" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testclass.AllTestClasses" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -145,17 +150,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test3">
-                  </a> <!-- test3 -->
-                  <span class="method-name">test3</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://demo.nopcommerce.com/apple-macbook-pro-13-inch has no size and location
-  (Session info: chrome=112.0.5615.138)
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Continue shopping&apos;]&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [69625c5feb3a841308746bc7c8a60c70, actions {actions=[org.openqa.selenium.interactions.Sequence@7c551ad4]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\poona\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52296/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 69625c5feb3a841308746bc7c8a60c70
+Command: [c8324acfa60b402836a4acf4156c9af8, findElement {using=xpath, value=//button[text()=&apos;Continue shopping&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\poona\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59095/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8324acfa60b402836a4acf4156c9af8
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -168,10 +174,15 @@ Session ID: 69625c5feb3a841308746bc7c8a60c70
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at pomClasses.Computers.MacBook(Computers.java:45)
-	at testclass.AllTestClasses.test3(AllTestClasses.java:67)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pomClasses.ShoppingCart.ContinueShopping(ShoppingCart.java:34)
+	at testclass.AllTestClasses.test4(AllTestClasses.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -226,12 +237,19 @@ Session ID: 69625c5feb3a841308746bc7c8a60c70
                   <span class="method-name">test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\poona\AppData\Local\Temp\testng-eclipse--1816639106\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\poona\AppData\Local\Temp\testng-eclipse--948271948\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -280,24 +298,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test3')
+data.setCell(0, 1, 'test4')
 data.setCell(0, 2, 'testclass.AllTestClasses')
-data.setCell(0, 3, 3797);
+data.setCell(0, 3, 22244);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1')
+data.setCell(1, 1, 'test3')
 data.setCell(1, 2, 'testclass.AllTestClasses')
-data.setCell(1, 3, 2986);
+data.setCell(1, 3, 10672);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test2')
+data.setCell(2, 1, 'test1')
 data.setCell(2, 2, 'testclass.AllTestClasses')
-data.setCell(2, 3, 1660);
+data.setCell(2, 3, 4665);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test2')
+data.setCell(3, 2, 'testclass.AllTestClasses')
+data.setCell(3, 3, 1973);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -330,29 +352,37 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod</span>
-                <span class="method-start">4364 ms</span>
+                <span class="method-start">26407 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">4394 ms</span>
+                <span class="method-start">26458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod</span>
-                <span class="method-start">7383 ms</span>
+                <span class="method-start">31138 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">7384 ms</span>
+                <span class="method-start">31140 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod</span>
-                <span class="method-start">9047 ms</span>
+                <span class="method-start">33119 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">33120 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforemethod</span>
+                <span class="method-start">43798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test3</span>
-                <span class="method-start">9050 ms</span>
+                <span class="method-name">test4</span>
+                <span class="method-start">43798 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

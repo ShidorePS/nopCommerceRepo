@@ -6,8 +6,11 @@
       <class name="testclass.AllTestClasses">
         <methods>
           <include name="beforemethod"/>
+          <include name="test1"/>
           <include name="beforeclass"/>
+          <include name="test2"/>
           <include name="test3"/>
+          <include name="test4"/>
         </methods>
       </class> <!-- testclass.AllTestClasses -->
     </classes>

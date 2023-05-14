@@ -48,7 +48,7 @@ public class AllTestClasses {
 		r.RegisterBtn();
 		
 	}
-	@Test()
+	@Test(dependsOnMethods = { "test1" })
 	public void test2()
 	{
 		login.LoginTxt();
@@ -56,26 +56,27 @@ public class AllTestClasses {
 		login.PasswordField();
 		login.LoginBtn();
 	}
-	@Test()
+	@Test(dependsOnMethods = { "test2" })
 	public void test3() throws InterruptedException 
 	{
 		c.Computer();
 		c.Notebook();
 		Thread.sleep(2000);
-		for (String windowHandle : driver.getWindowHandles()) 
+ 		for (String windowHandle : driver.getWindowHandles()) 
 			driver.switchTo().window(windowHandle);
 		c.MacBook();
 		c.Quantity();
 		Thread.sleep(2000);
 		c.AddToCart();
 	}
+	@Test(dependsOnMethods = { "test3" })
 	public void test4() throws InterruptedException
 	{	
-		Thread.sleep(5000);
-		for (String windowHandle : driver.getWindowHandles()) 
-			driver.switchTo().window(windowHandle);
+//		Thread.sleep(5000);
+//		for (String windowHandle : driver.getWindowHandles()) 
+//			driver.switchTo().window(windowHandle);
 		sc.ShoppingCrt();
-		//sc.ContinueShopping();
+		sc.ContinueShopping();
 	}
 	
 	
